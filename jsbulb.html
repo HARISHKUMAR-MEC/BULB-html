@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title> JS BULB</title>
+    <style>
+        body{
+            background-image: url("https://getwallpapers.com/wallpaper/full/7/f/7/852797-light-bulb-hd-wallpapers-1920x1080-for-meizu.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+</style>
+</head>
+<body>
+    <center><h1 style="color: rgb(252, 16, 8);">INCANDESCENT LIGHT BULB</h1></center>
+    <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="200" height="200">
+    <h3 style="color: rgb(23, 9, 216);"><p><i> <br>!---> An incandescent light bulb, incandescent lamp or incandescent light globe is an electric 
+        light with a filament that is heated until it glows. <br>!---> The filament is enclosed in a glass bulb 
+        that is either evacuated or filled with inert gas to protect the filament from oxidation. <br>!--->
+        Electric current is supplied to the filament by terminals or wires embedded in the glass. <br>!--->
+        A bulb socket provides mechanical support and electrical connections. <br>!--->
+        Incandescent bulbs are manufactured in a wide range of sizes, light output, and voltage ratings, 
+        from 1.5 volts to about 300 volts. <br>!---> They require no external regulating equipment, have low 
+        manufacturing costs, and work equally well on either alternating current or direct current. <br>!--->
+        As a result, the incandescent bulb became widely used in household and commercial lighting, 
+        for portable lighting such as table lamps, car headlamps, and flashlights. </h1></i></p></h3>
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "pic_bulboff.gif";
+  } else {
+    image.src = "pic_bulbon.gif";
+  }
+}
+</script>
+
+</body>
+</html>
